@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f6f9;
+    color: #1a2530;
+    line-height: 1.6;
+}
+
+.cabecera-principal {
+    display: block;
+    width: 100%;
+    background-color: #0d233a;
+    color: #ffffff;
+    padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 5vw, 4rem);
+    text-align: center;
+    border-bottom: 0.4rem solid #c0392b;
+}
+
+.titulo-principal {
+    display: block;
+    margin: 0 0 0.5rem 0;
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    color: #ffffff;
+    letter-spacing: 0.05ch;
+}
+
+.subtitulo-principal {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    max-width: 80ch;
+    font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+    color: #d1d8e0;
+}
+
+.navegacion-principal {
+    display: block;
+    margin-top: 1.2rem;
+}
+
+.enlace-navegacion {
+    display: inline-block;
+    margin: 0.3rem 0.6rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #c0392b;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    border-bottom: 0.2rem solid #962d22;
+}
+
+.enlace-navegacion:hover {
+    background-color: #a93226;
+}
+
+.contenido-principal {
+    display: block;
+    width: min(94%, 1280px);
+    margin: 2.5rem auto;
+}
+
+.seccion-catalogo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 2.5rem;
+}
+
+.titulo-seccion {
+    display: block;
+    width: 100%;
+    font-size: clamp(1.5rem, 2.8vw, 2.4rem);
+    color: #0d233a;
+    margin-bottom: 1.8rem;
+    text-align: left;
+    border-left: 0.4rem solid #c0392b;
+    padding-left: 0.8rem;
+}
+
+.tarjeta-producto {
+    display: inline-block;
+    width: min(100%, 380px);
+    vertical-align: top;
+    background-color: #ffffff;
+    margin: 1.2% 1.2%;
+    padding: 1.5rem;
+    border: 0.1rem solid #dcdde1;
+    border-top: 0.3rem solid #0d233a;
+    text-align: left;
+    font-size: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(13, 35, 58, 0.05);
+}
+
+.contenedor-multimedia {
+    display: block;
+    width: 100%;
+    height: 220px;
+    background-color: #e4e7eb;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 0.1rem solid #bdc3c7;
+}
+
+.imagen-producto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre-producto {
+    display: block;
+    font-size: 1.25rem;
+    color: #0d233a;
+    margin: 0 0 0.5rem 0;
+    font-weight: bold;
+}
+
+.descripcion-producto {
+    display: block;
+    font-size: 0.95rem;
+    color: #57606f;
+    margin: 0 0 1rem 0;
+}
+
+.detalles-producto {
+    display: block;
+    border-top: 0.1rem solid #f1f2f6;
+    padding-top: 0.8rem;
+}
+
+.resumen-desplegable {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #c0392b;
+    font-size: 0.9rem;
+}
+
+.lista-detalles {
+    display: block;
+    margin: 0.8rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.lista-detalles dt {
+    display: inline-block;
+    font-weight: bold;
+    color: #0d233a;
+    width: 40%;
+    padding-bottom: 0.3rem;
+}
+
+.lista-detalles dd {
+    display: inline-block;
+    margin-left: 0;
+    width: 60%;
+    color: #2f3640;
+    padding-bottom: 0.3rem;
+}
+
+.seccion-info {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2.2rem;
+    margin-top: 2rem;
+    border-left: 0.4rem solid #0d233a;
+    border-right: 0.1rem solid #dcdde1;
+    border-top: 0.1rem solid #dcdde1;
+    border-bottom: 0.1rem solid #dcdde1;
+}
+
+.texto-info {
+    display: block;
+    font-size: 1rem;
+    color: #2f3640;
+    margin: 0;
+}
+
+.detalles-acordeon {
+    display: block;
+    margin-top: 1rem;
+    border: 0.1rem solid #e4e7eb;
+    padding: 0.8rem;
+    background-color: #f8f9fa;
+}
+
+.resumen-acordeon {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0d233a;
+    font-size: 0.95rem;
+}
+
+.detalles-acordeon .texto-info {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 0.1rem solid #e4e7eb;
+}
+
+.pie-principal {
+    display: block;
+    width: 100%;
+    background-color: #0d233a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 3.5rem;
+    border-top: 0.4rem solid #c0392b;
+}
+
+.texto-pie {
+    display: block;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+    color: #d1d8e0;
+}
